@@ -1,0 +1,268 @@
+<html>
+  <head>
+    <title>Liton Barman</title>
+    <style>
+    body{
+      background:black;
+    }
+    aside{
+      background:rgba(3,26,120,0.4);
+      height:100%;
+      width:300px;
+      position:fixed;
+      top:0px;
+      left:0px;
+      overflow:hidden;
+    }
+    #background{
+      background:url("back1.jpg");
+      position:fixed;
+      right:0px;
+      top:0px;
+      background-size:cover;
+    }
+    .circle{
+      height:6px;
+      width:6px;
+      border-radius:3px;
+      background:rgba(3,26,120,0.3);
+      position:absolute;
+      opacity:1;
+    }
+    aside ul li{
+      border-top:2px solid black ;
+      border-bottom:2px solid  rgba(3,56,160,0.3);
+      text-align:center;
+      height:36px;
+      margin-bottom:14px;
+      cursor:pointer;
+      background:rgba(3,26,120,0.3);
+      height:20px;
+      width:99%;
+      left:0px;
+      padding-top:6px;
+    }
+    article{
+      height:80%;
+      position:absolute;
+      top:10%;
+      left:50%;
+      overflow:hidden;
+    }
+    </style>
+  </head>
+  <body onresize="resize()" onload="resize()">
+    <aside id="canvas">
+      <img src="demoProfile.JPG" height="150" width="150" style="border-radius:100px;position:absolute;left:75px;top:75px;border:10px solid rgb(3,26,120);"/>
+
+
+        <ul style="display:block;color:#fff;list-style-type:none;font-size:16px;position:absolute;top:300px;left:0px;width:300px;padding-left:0px;">
+          <li id="l1" onclick="options(1)">HOME</li>
+          <li id="l2" onclick="options(2)">ABOUT</li>
+          <li id="l3" onclick="options(3)">SERVICES</li>
+          <li id="l4" onclick="options(4)">PORTFOLIO</li>
+          <li id="l5" onclick="options(5)">CONTACT</li>
+          <li id="l6" onclick="options(6)">HIRE ME</li>
+        </ul>
+
+
+    </aside>
+
+    <div id="background"></div>
+
+    <article id="article">
+      <div id="HOME" style="position:absolute;top:0px;left:0px;height:100%;width:100%;">
+        <img src="demoProfile.JPG" height="30%" style="position:absolute;left:35%;top:5%;border-radius:50%;" />
+        <div style="position:absolute;top:40%;left:30%;color:#fff;font-size:50px;cursor:default;"><span style="color:#36d">Hello !</span><br/>I am <span style="color:#6b9;">LITON BARMAN</span><br/>I am a software developer<br/><span style="color:rgb(256,218,101);cursor:pointer;">Hire me</span></div>
+      </div>
+
+      <div id="ABOUT" style="position:absolute;top:0px;left:0px;background:green;visibility:hidden;height:100%;width:100%;">
+      </div>
+
+      <div id="SERVICES" style="position:absolute;top:0px;left:0px;background:green;visibility:hidden;height:100%;width:100%;">
+      </div>
+
+      <div id="PORTFOLIO" style="position:absolute;top:0px;left:0px;background:green;visibility:hidden;height:100%;width:100%;">
+      </div>
+
+      <div id="CONTACT" style="position:absolute;top:0px;left:0px;background:green;visibility:hidden;height:100%;width:100%;">
+      </div>
+
+      <div id="HIREME" style="position:absolute;top:0px;left:0px;background:green;visibility:hidden;height:100%;width:100%;">
+      </div>
+
+    </article>
+
+  </body>
+</html>
+<script type="text/javascript">
+
+var can = document.getElementById("canvas");
+options(1);
+
+function circle(x, y){
+   var cir = document.createElement("div");
+   cir.className = "circle";
+   cir.style.top = 900-y;
+   cir.style.left = x;
+   can.appendChild(cir);
+
+   var x=1;
+
+   var t = setInterval(function(){
+     if(x!= 0.00){
+       x -= 0.1;
+       cir.style.opacity = x;
+     }
+     else{
+      clearInterval(t);
+      cir.remove();
+     }
+   }, 1500);
+//   setTimeout(function(){cir.remove();}, 1000);
+}
+
+
+
+var counter = 0, increase = Math.PI/100, counter2=0, increase2 = Math.PI/60, counter3=0, increase3 = Math.PI/20, counter4=0, increase4 = Math.PI/73;
+var delay =0;
+
+var i = 0;
+function wave(){
+
+if(i>=301){
+  if(delay == 810){
+    delay = 0;
+    i = 0;
+  }
+  else{
+    delay++;
+   return;
+  }
+}
+
+
+var y = (70*Math.sin(counter))+(50*Math.sin(counter2))+(20*Math.sin(counter3))+(40*Math.sin(counter4));
+  circle(i, y);
+  circle(i, 30+y);
+  circle(i, 60+y);
+  circle(i, 90+y);
+  //circle(i, 120+y);
+
+  counter += increase;
+  counter2 += increase2;
+  counter3 += increase3;
+  counter4 += increase4;
+  if(i!=400){
+    i++;
+  }
+  else{i=0;}
+}
+
+setInterval(function(){wave();},10);
+
+function background(){
+  var bac = document.getElementById("background");
+  bac.style.height = window.innerHeight;
+  bac.style.width = window.innerWidth -300;
+}
+function article(){
+  var ar = document.getElementById("article");
+  ar.style.width = window.innerWidth - 380;
+  ar.style.left = 350;
+}
+
+function resize(){
+  article();
+  background();
+}
+
+function options(idNo){
+
+  document.getElementById("l1").style.background = "rgba(3,26,120,0.3)";
+  document.getElementById("l2").style.background = "rgba(3,26,120,0.3)";
+  document.getElementById("l3").style.background = "rgba(3,26,120,0.3)";
+  document.getElementById("l4").style.background = "rgba(3,26,120,0.3)";
+  document.getElementById("l5").style.background = "rgba(3,26,120,0.3)";
+  document.getElementById("l6").style.background = "rgba(3,26,120,0.3)";
+
+  document.getElementById("l1").style.borderBottom = "2px solid  rgba(3,56,160,0.3)";
+  document.getElementById("l1").style.borderTop = "2px solid black";
+
+  document.getElementById("l2").style.borderBottom = "2px solid  rgba(3,56,160,0.3)";
+  document.getElementById("l2").style.borderTop = "2px solid black";
+
+  document.getElementById("l3").style.borderBottom = "2px solid  rgba(3,56,160,0.3)";
+  document.getElementById("l3").style.borderTop = "2px solid black";
+
+  document.getElementById("l4").style.borderBottom = "2px solid  rgba(3,56,160,0.3)";
+  document.getElementById("l4").style.borderTop = "2px solid black";
+
+  document.getElementById("l5").style.borderBottom = "2px solid  rgba(3,56,160,0.3)";
+  document.getElementById("l5").style.borderTop = "2px solid black";
+
+  document.getElementById("l6").style.borderBottom = "2px solid  rgba(3,56,160,0.3)";
+  document.getElementById("l6").style.borderTop = "2px solid black";
+/*
+border-top:2px solid black ;
+border-bottom:2px solid  rgba(3,56,160,0.3);
+*/
+  switch(idNo){
+    case 1:
+       document.getElementById("l1").style.background = "rgba(66,140,196,0.3)";
+       document.getElementById("l1").style.borderBottom = "4px solid black";
+       document.getElementById("l1").style.borderTop = "2px solid  rgba(23,76,180,0.3)";
+    break;
+    case 2:
+       document.getElementById("l2").style.background = "rgba(66,140,196,0.3)";
+       document.getElementById("l2").style.borderBottom = "4px solid black";
+       document.getElementById("l2").style.borderTop = "2px solid  rgba(23,76,180,0.3)";
+    break;
+    case 3:
+       document.getElementById("l3").style.background = "rgba(66,140,196,0.3)";
+       document.getElementById("l3").style.borderBottom = "4px solid black";
+       document.getElementById("l3").style.borderTop = "2px solid  rgba(23,76,180,0.3)";
+    break;
+    case 4:
+       document.getElementById("l4").style.background = "rgba(66,140,196,0.3)";
+       document.getElementById("l4").style.borderBottom = "4px solid black";
+       document.getElementById("l4").style.borderTop = "2px solid  rgba(23,76,180,0.3)";
+    break;
+    case 5:
+       document.getElementById("l5").style.background = "rgba(66,140,196,0.3)";
+       document.getElementById("l5").style.borderBottom = "4px solid black";
+       document.getElementById("l5").style.borderTop = "2px solid  rgba(23,76,180,0.3)";
+    break;
+    case 6:
+       document.getElementById("l6").style.background = "rgba(66,140,196,0.3)";
+       document.getElementById("l6").style.borderBottom = "4px solid black";
+       document.getElementById("l6").style.borderTop = "2px solid  rgba(23,76,180,0.3)";
+    break;
+  }
+}
+
+
+function hideSlide(idName){
+  var t, i = 0;
+
+  t = setInterval(function(){hide();},5);
+
+  function hide(){
+     document.getElementById(idName).style.left = i;
+
+     i -= 5;
+
+     if(i <= -1400){
+         clearInterval(t);
+         document.getElementById(idName).style.visibility = "hidden";
+         document.getElementById(idName).style.left = 0;
+
+     }
+
+  }
+
+}
+
+//hideSlide("HOME");
+
+</script>
