@@ -55,7 +55,7 @@ ________________
 
 * Custobootloader                                                                                                                      Oct 2019 - Oct 2019
 * Custobootloader is a small bootloader (single stage) written from bottom up in NASM (assembly).
-* Perfect for tweaking with low level OS / Kernel development and system(hardware peripheral) with level higher system programming language such as C or C++.
+* Perfect for tweaking with low level OS / Kernel development and system(hardware peripheral) with higher level system programming language such as C or C++.
 * It set up the Global Descriptor Table (GDT) and system stack register BP (base pointer) & SP (stack pointer) and creates the environment for C / C++ development..
 
 
