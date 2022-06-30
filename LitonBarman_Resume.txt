@@ -37,7 +37,7 @@ ________________
 * Spacespark                                                                                                                   Nov 2021 - Jan 2022
 * Spacespark is a social media platform for artists, creators, developers, musicist, dancers.
 * Featured with chatting, group chatting, sharing story, posting arts, likes, dislikes, friend requests, etc.
-* API less, frontend handled my Javascript, HTML, CSS, and backend handled by PHP, MySQL.
+* API less, frontend handled by Javascript, HTML, CSS, and backend handled by PHP, MySQL.
 
 
 * Object Model Loader (OMI)                                                                                                     Oct 2021 - Dec 2021 
