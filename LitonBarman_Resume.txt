@@ -1,0 +1,73 @@
+﻿Liton Barman                                                                                                      litonbarman.github.io
+litonbarman2410@gmail.com                                                                                                   github.com/litonbarman
+www.linkedin.com/in/litonbarman                                                                                        9402433883 / 9774762801
+
+
+Education
+________________
+* National Institute of Technology                                                                              Arunachal Pradesh, India
+       Bachelor of Technology in Computer Science & Engineering; GPA : 8.07 / 10.0                   Aug 2019 - May 2023
+* Kendriya Vidyalaya No.1                                                                                          Arunachal Pradesh, India
+       Class IX (Senior Secondary);  Board : CBSE; Percentage : 79%                                                         2018 - 2019
+      Class X (Secondary); Board : CBSE; GPA : 9.8 / 10.0                                                                           2016 - 2017
+
+
+Experience
+________________
+
+
+* Rise Retail & Payment Solutions Pvt. Ltd.                                                                                          (Remote)
+       Software Engineer Intern       (Backend with PHP & SQL)                                                        Feb 2022 - Mar 2022
+* Designed & Coded 2 API less extensible module, core business module.
+* Improved 1 existing module & increased its performance by 12% .
+* Optimized the page’s performance by 33%  for faster loading and browsing by reducing 
+* dependency on external third party API, external API call.
+* Indian Institute of Technology Bhubaneswar                                                                                (Remote)
+* Full stack Developer; Training Cum Intern                                                                                    Jan 2022 - Feb 2022   
+* Trained in technologies like HTML5 / CSS3, javascript, nodejs, python, bootstrap.
+* Implemented an Ecommerce website with frontend design..
+* Machine learning engineer; Training Cum Intern                                                                  Jan 2022 - Feb 2022
+* Worked with tensorflow & Keras, and API written in scratch.
+* Developed a face & smile detection application and integrated with web application.
+
+
+Projects
+________________
+ 
+* Spacespark       (Personal)                                                                                             Nov 2021 - Jan 2022
+* Spacespark is a social media platform for artists, creators, developers, musicist, dancers.
+* Featured with chatting, group chatting, sharing story, posting arts, likes, dislikes, friend requests, etc.
+* API less, frontend handled my Javascript, HTML, CSS, and backend handled by PHP, MySQL.
+
+
+* Object Model Loader (OMI)        (Personal)                                                                             Oct 2021 - Dec 2021 
+* Object Model Loader (OMI) is a 3D model importer, created from scratch in C++.
+* Support OBJ (wavefront) & FBX (filmbox) model and renderable with OpenGL, Vulkan or DirectX API.
+* Extensible, suitable for Simulation, Game Engine and application based on OpenGL or any other API.
+
+
+* Arreca Rendering Engine         (Personal)                                                                              Mar 2021 - Nov 2021
+* Arreca Rendering Engine is a cross platform rendering engine, written from scratch in C++, OpenGL3.
+* Part of the game engine project (Arreca Engine), capable of rendering with GPU, programmable pipeline. 
+* Capable of loading, rendering, animating 3d models with the ability to simulate light physics.
+* Flexible design with the ability to combine with other system like Physics Engine.
+
+
+* Custobootloader         (Personal)                                                                                             Oct 2019 - Oct 2019
+* Custobootloader is a small bootloader (single stage) written from bottom up in NASM (assembly).
+* Perfect for tweaking with low level OS / Kernel development and system(hardware peripheral) with level higher system programming language such as C or C++.
+* It setup the Global Descriptor Table (GDT) and system stack register BP (base pointer) & SP (stack pointer) and created the environment for C / C++ development..
+
+
+________________
+
+
+Skills :  C / C++ (proficient), PHP, Javascript, Java, bash, Cmake, git, github, HTML/CSS
+________________
+
+
+Certification :  NPTEL, Data structure & Algorithm in Java
+________________
+
+
+Awards : Letter of Recommendation from Rise Retail & Payment Solutions Pvt. Ltd.
